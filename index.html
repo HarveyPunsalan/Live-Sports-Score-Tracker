@@ -8,6 +8,36 @@
   <title>Live Sports</title>
 </head>
 <body>
+<!-- HEADER -->
+<header>
+  <div class="logo">🏆 Sports Tracker</div>
+  <p class="tagline">Search any team in the world</p>
+
+  <!-- SEARCH BAR -->
+  <div class="search-section">
+    <input type="text" id="search-input" placeholder="Search a team... e.g. Arsenal, Lakers"/>
+    <button id="search-btn">Search</button>
+  </div>
+</header>
+
+<main>
+  <!-- STATUS MESSAGE -->
+  <p id="status-msg">Search for a team to get started!</p>
+
+  <!-- TEAM PROFILE (hidden until search) -->
+  <div id="team-profile" class="hidden">
+    <img id="team-badge" src="" alt="team badge"/>
+    <div class="team-info">
+      <h2 id="team-name"></h2>
+      <p id="team-sport"></p>
+      <p id="team-country"></p>
+      <p id="team-stadium"></p>
+    </div>
+  </div>
+
+
+</main>
+
 
 </body>
 </html>

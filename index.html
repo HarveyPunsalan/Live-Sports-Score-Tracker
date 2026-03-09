@@ -5,18 +5,19 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
   <title>Live Sports</title>
 </head>
 <body>
 <!-- HEADER -->
 <header>
   <div class="logo">🏆 Sports Tracker</div>
-  <p class="tagline">Search any team in the world</p>
 
-  <!-- SEARCH BAR -->
-  <div class="search-section">
-    <input type="text" id="search-input" placeholder="Search a team... e.g. Arsenal, Lakers"/>
-    <button id="search-btn">Search</button>
+    <!-- SEARCH BAR -->
+    <div class="search-section">
+      <input type="text" id="search-input" placeholder="Search a team..."/>
+      <button id="search-btn">Search</button>
   </div>
 </header>
 
@@ -35,9 +36,24 @@
     </div>
   </div>
 
+  <!-- RESULTS SECTION (hidden until search) -->
+  <div id="results-section" class="hidden">
+
+    <!-- LAST 5 RESULTS -->
+    <div class="column">
+      <h3>Last 5 Results</h3>
+      <div id="last-results"></div>
+    </div>
+
+    <!-- UPCOMING MATCHES -->
+    <div class="column">
+      <h3>Upcoming Matches</h3>
+      <div id="upcoming-matches"></div>
+    </div>
+
+  </div>
 
 </main>
-
-
+<script src="app.js"></script>
 </body>
 </html>
